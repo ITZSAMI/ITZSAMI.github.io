@@ -1,0 +1,254 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #e0e0e0;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #1e1e1e;
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: #00ff88 !important;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    color: #e0e0e0 !important;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #00ff88 !important;
+}
+
+/* Hero */
+#hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-icon i {
+    font-size: 4rem;
+    color: #00ff88;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.btn-main {
+    background-color: #00ff88;
+    color: #0a0a0a;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.btn-main:hover {
+    background-color: #00cc6a;
+    transform: translateY(-2px);
+}
+
+/* Sections */
+section {
+    padding: 6rem 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #00ff88;
+    margin-top: 0.5rem;
+}
+
+/* About */
+#about {
+    background-color: #0f0f0f;
+}
+
+.about-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 700px;
+}
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.languages span {
+    background-color: #0a0a0a;
+    border: 1px solid #2a2a2a;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #00ff88;
+}
+
+/* Projects */
+#projects {
+    background-color: #0a0a0a;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #00ff88;
+}
+
+.project-card i {
+    font-size: 2rem;
+    color: #00ff88;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.project-card h3 {
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.project-card p {
+    color: #888;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.tag {
+    background-color: #0a0a0a;
+    border: 1px solid #2a2a2a;
+    color: #00ff88;
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #00ff88;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Skills */
+#skills {
+    background-color: #0f0f0f;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #e0e0e0;
+    transition: border-color 0.3s;
+}
+
+.skill-item:hover {
+    border-color: #00ff88;
+}
+
+.skill-item i {
+    display: block;
+    font-size: 2rem;
+    color: #00ff88;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact */
+#contact {
+    background-color: #0a0a0a;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-links a {
+    color: #00ff88;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border: 1px solid #00ff88;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: #00ff88;
+    color: #0a0a0a;
+}
