@@ -1,0 +1,118 @@
+\documentclass[12pt, a4paper]{article}
+
+% Packages
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{fontenc}
+\usepackage{inputenc}
+\usepackage{enumitem}
+\usepackage{microtype}
+
+% Hyperlink styling
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=black
+}
+
+% Section heading formatting
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{1.2em}{0.6em}
+
+% Title info
+\title{\textbf{B201 Computer Science Lab} \\ Portfolio Report}
+\author{Sami Albaroudi}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% -------------------------------------------------------
+\section{Introduction}
+
+This report covers what I built for my B201 Computer Science Lab module, a personal portfolio website designed to show off my technical skills to potential employers. It was actually my first time building a website portfolio. I do have a CV that I built using https://europass.europa.eu/en/create-europass-cv, however, I did not really like using their website. I find this untilmately way more convenient as I am able to edit everything in details and adjust the format of the content exactly the way I picture it in my head. The site is live and the code is all publicly available:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{Portfolio:} \url{https://ITZSAMI.github.io}
+    \item \textbf{GitHub:} \url{https://github.com/ITZSAMI/ITZSAMI.github.io}
+\end{itemize}
+
+% -------------------------------------------------------
+\section{Repository Structure}
+
+The repository is kept fairly simple and straightforward:
+
+\begin{itemize}[noitemsep]
+    \item \texttt{index.html} --- the main page with all the site content
+    \item \texttt{style.css} --- custom styles on top of Bootstrap
+    \item \texttt{Sami CV.pdf} --- my CV, generated in LATEX and linked from the site
+    \item \texttt{cv.tex} --- the LATEX source for the CV
+    \item \texttt{README.md} --- an overview of the project and how it's structured
+\end{itemize}
+
+% -------------------------------------------------------
+\section{Website Structure}
+
+The portfolio is a single-page site split into five main sections. There's a fixed navbar at the top for smooth scrolling, a hero section with my name and title, an about section with a short intro, a projects section with four cards linking to my GitHub work, a skills grid with icons, and a contact section with links to my profiles and a CV download.
+
+% -------------------------------------------------------
+\section{Design Decisions}
+
+A few deliberate choices went into how the site looks and works.
+
+\textbf{Dark Theme:} I went with a dark theme because it's pretty standard for developer portfolios and honestly just looks better for a tech-focused audience. It's also easier on the eyes at night. I find it to be aesthetically pleasing and nice to look at. If I were to be the employer looking at my cv, I would certainly not find a hard time navigating and reading stuff. 
+
+\textbf{Bootstrap 5:} For the framework, I picked Bootstrap 5. It handles responsiveness out of the box and speeds up development a lot, using established tools like this is normal practice in real-world web development, so it felt like the right call.
+
+\textbf{Single Page Layout:} The single-page layout made sense given the amount of content. There's no need for multiple pages here, and anchor-based navigation keeps things smooth and simple.
+
+\textbf{Bootstrap Icons:} I added Bootstrap Icons throughout to make sections easier to scan and give the site a more polished feel.
+
+\textbf{GitHub Pages:} Hosting on GitHub Pages was an easy decision, it's free, it connects directly to the repo, and it deploys automatically on every push.
+
+% -------------------------------------------------------
+\section{Tools and Technologies}
+
+The following tools and technologies were used to develop the portfolio:
+
+\begin{itemize}[noitemsep]
+    \item \textbf{HTML5} --- page structure
+    \item \textbf{CSS3} --- custom styling
+    \item \textbf{Bootstrap 5} --- responsive layout and UI components
+    \item \textbf{Bootstrap Icons} --- iconography
+    \item \textbf{Git \& GitHub} --- version control and repo hosting
+    \item \textbf{GitHub Pages} --- deployment
+    \item \textbf{LATEX (Overleaf)} --- CV and this report
+    \item \textbf{VS Code} --- main code editor
+\end{itemize}
+
+% -------------------------------------------------------
+\section{Strengths and Weaknesses}
+
+On the positive side, the site is fully responsive across desktop and mobile, the design is clean and appropriate for a developer portfolio, and the repo is well-documented. The CV is also properly typeset in LATEX rather than just thrown together in Word.
+
+That said, there are some clear gaps. The site has no backend or dynamic features yet, the project descriptions are fairly brief, and there's no individual page for each project with more detail. Another weakness is perhaps the credibility of the projects. I believe that I am still far behind in standing out among other software engineering applicants. I need to add projects that truly matter and tailor my CV to each and every job application I apply to.  
+% -------------------------------------------------------
+\section{Future Improvements}
+
+There's a decent list of things I'd like to add over time. A contact form with a backend would make the site actually functional for visitors who want to reach out. Individual project pages with screenshots and live demos would give a much better picture of each project. I also want to add some scroll animations, keep expanding the projects section as I build more during my studies, and eventually rebuild the whole thing in React, that's probably the most relevant skill for the Werkstudent roles I'm applying for in Berlin.
+
+% -------------------------------------------------------
+\section{Conclusion}
+
+Overall, this portfolio does what it's supposed to, it shows what I can currently do and gives me something real to point employers to. The process involved making actual decisions about tools, design, and structure rather than just following a template. I'll keep updating it as my skills grow throughout the course.
+
+% -------------------------------------------------------
+\section*{References}
+
+\begin{itemize}[noitemsep, label={}]
+    \item Bootstrap (2023) \textit{Bootstrap 5 Documentation}. Available at: \url{https://getbootstrap.com} (Accessed: 26 June 2026).
+    \item Bootstrap Icons (2023) \textit{Bootstrap Icons Documentation}. Available at: \url{https://icons.getbootstrap.com} (Accessed: 26 June 2026).
+    \item GitHub (2023) \textit{GitHub Pages Documentation}. Available at: \url{https://pages.github.com} (Accessed: 26 June 2026).
+    \item Overleaf (2023) \textit{Overleaf Documentation}. Available at: \url{https://www.overleaf.com/learn} (Accessed: 26 June 2026).
+\end{itemize}
+
+\end{document}
